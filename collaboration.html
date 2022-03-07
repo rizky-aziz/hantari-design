@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collaboration</title>
+
+    <!-- tailwind css -->
+    <!-- <link rel="stylesheet" href="assets/css/tailwind.css" /> -->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header class="px-6 md:px-16 h-20 fixed inset-x-0 top-0 bg-white box-between z-40">
+      <a href="#">
+        <img src="./assets/img/logo.png" alt="hantari-header-logo" />
+      </a>
+      
+      <!-- hidden on mobile -->
+      <nav class="xl:flex hidden gap-x-8 font-light header-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="#">Our Services <span class="ml-2 text-blue-brand">&#9660;</span></a>
+        <a href="hantari-academy.html">Hantari Academy <span class="ml-2 text-blue-brand">&#9660;</span></a>
+        <a href="collaboration.html" class="font-bold text-blue-brand">Collaboration</a>
+        <a href="media.html">Media <span class="ml-2 text-blue-brand">&#9660;</span></a>
+      </nav>
+
+      <div class="flex items-center gap-x-5">
+        <a href="#" class="text-sm bg-purple-500 text-white px-8 py-2 rounded-full font-bold whitespace-nowrap ml-2 sm:block hidden"> Hantari Store </a>
+        <svg class="menu-toggle block xl:hidden cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1)">
+          <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+        </svg>
+      </div>
+      
+    </header>
+    <!-- hidden on desktop -->
+    <header class="mobile-navbar xl:hidden mt-20 px-6 md:px-16 fixed inset-x-0 bg-white  border-t border-slate-500 -top-96 z-30 shadow-md transition-all duration-300">
+      <nav class="bg-white flex flex-col">
+        <a href="index.html" class="py-3">Home</a>
+        <a href="about.html" class="py-3">About Us</a>
+        <a href="#" class="py-3">Our Services <span class="ml-2 text-blue-brand">&#9660;</span></a>
+        <a href="hantari-academy.html" class="py-3">Hantari Academy <span class="ml-2 text-blue-brand">&#9660;</span></a>
+        <a href="collaboration.html" class="py-3 font-bold text-blue-brand">Collaboration</a>
+        <a href="media.html" class="py-3">Media <span class="ml-2 text-blue-brand">&#9660;</span></a>
+        <a href="#" class="text-sm text-white mb-4 font-bold sm:hidden block"> 
+          <button class="bg-purple-500 px-8 py-2 rounded-full">
+            Hantari Store 
+          </button>
+        </a>
+      </nav>
+    </header>
+
+    <main class="mt-20 min-h-screen">
+      <!-- transparent img banner -->
+      <section class="relative">
+        <h1 class="text-2xl md:text-4xl text-right text-white font-bold py-28 pr-16 sm:pr-28 md:pr-56 relative z-20">Program Kolaborasi</h1>
+
+        <div class="w-12 sm:w-20 md:w-40 bg-blue-brand h-full absolute right-0 inset-y-0 z-20 opacity-90"></div>
+        <div class="absolute inset-0 z-10 opacity-20 bg-center bg-cover" style="background-image: url(https://picsum.photos/1080/1080)"></div>
+        <div class="bg-purple-400 absolute inset-0"></div>
+      </section>
+
+      <!-- program kami -->
+      <section class="my-28 md:my-32 text-center">
+        <img src="assets/img/logo_title.png" alt="hantari-only-logo" class="mx-auto" />
+
+        <h1 class="text-3xl text-blue-brand font-bold my-8 tracking-wider">PROGRAM KAMI</h1>
+        <h2 class="text-2xl text-purple-500 font-bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, id?</h2>
+        <h3 class="text-sm md:text-xl font-light mt-4">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, alias <br />
+          lorem ipsum dolor sit amet
+        </h3>
+      </section>
+
+      <!-- tentang hantari kolaborasi -->
+      <section class="grid grid-cols-1 lg:grid-cols-2">
+        <!-- text, desc, btn -->
+        <div class="p-6 md:p-20">
+          <h1 class="text-2xl text-purple-500 font-bold">Tentang Hantari Kolaborasi</h1>
+          <p class="font-light my-4">
+            Menyatakan misi kami untuk mengantarkan manusia ke tempat yang lebih tinggi, membantu dan menjadi mitra bagi anda baik individu, tim, organisasi atau komunitas yang ingin menjadi lebih baik dan mengembangkan potensi yang dimiliki.
+            <br /><br />
+            Dalam lingkup masyarakat, kami juga ingin berkontribusi untuk mewujudkan masyarakat dengan kualitas manusia yang terus meningkat.
+            <br /><br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ratione quas officia soluta enim nostrum temporibus illo quo vel perferendis!
+          </p>
+
+          <!-- how it works btn -->
+          <button class="flex items-center gap-x-2 mt-4">
+            <span class="transform -rotate-90 text-white rounded-full w-8 h-8 bg-yellow-400 box-center"> &#9660; </span>
+
+            <span class="font-light text-yellow-400">HOW IT WORKS</span>
+          </button>
+        </div>
+
+        <!-- vid, bg -->
+        <div class="grid grid-cols-3 relative">
+          <div class="absolute inset-0 p-6 lg:p-20 z-20">
+            <div class="bg-white w-full h-full shadow-2xl" style="background-image: url(https://picsum.photos/500/500)"></div>
+          </div>
+
+          <!-- bg -->
+          <div class="col-span-2">
+            <!-- empty div for spacing -->
+          </div>
+
+          <div class="col-span-1 h-96 lg:h-full relative">
+            <div class="absolute inset-0 z-10 opacity-50 bg-cover bg-no-repeat" style="background-image: url(https://picsum.photos/1080/1080)"></div>
+            <div class="absolute inset-0 bg-purple-500"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- hantari kolaborasi -->
+      <section class="py-20 px-10 md:px-14 lg:px-32">
+        <img src="assets/img/logo_title.png" alt="hantari-only-logo" class="mx-auto" />
+
+        <h1 class="text-3xl text-center text-blue-brand font-bold mt-8">HANTARI KOLABORASI</h1>
+        <p class="text-md md:text-xl  mt-4 font-light text-center">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br />
+          Quo, autem nisi. Architecto totam nemo corporis.
+        </p>
+
+        <!-- 4 circles -->
+        <div class="mt-20 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- benefit kolaborasi 1 -->
+          <div class="flex flex-col md:flex-row gap-x-3 md:gap-x-6">
+            <!-- circle img -->
+            <div class="md:w-100px md:min-w-100px md:max-w-100px flex items-center md:items-start">
+              <img class="w-14 md:w-auto" src="assets/img/collaboration/hantari-kolaborasi/icon_kolaborasi.png" alt="people-chat" />
+              <h2 class="font-bold text-xl ml-3 md:hidden block">Benefit Kolaborasi 1</h2>
+            </div>
+
+            <!-- texts -->
+            <div class="mt-3 md:mt-0">
+              <h2 class="font-bold text-xl mb-4 md:block hidden">Benefit Kolaborasi 1</h2>
+              <p class="font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aut asperiores odit quidem veritatis eligendi earum maxime qui unde cumque quae, quibusdam modi neque nemo autem blanditiis, mollitia dolorem sequi ipsum fuga velit. Cupiditate temporibus sint esse aliquid molestias
+                enim sed. Voluptate omnis alias consectetur deleniti eligendi? Repellat, ab non?
+              </p>
+            </div>
+          </div>
+
+          <!-- benefit kolaborasi 2 -->
+          <div class="flex flex-col md:flex-row gap-x-3 md:gap-x-6">
+            <!-- circle img -->
+            <div class="md:w-100px md:min-w-100px md:max-w-100px flex items-center md:items-start">
+              <img class="w-14 md:w-auto" src="assets/img/collaboration/hantari-kolaborasi/icon2_kolaborasi.png" alt="handshake" />
+              <h2 class="font-bold text-xl ml-3 md:hidden block">Benefit Kolaborasi 2</h2>
+            </div>
+
+            <!-- texts -->
+            <div class="mt-3 md:mt-0">
+              <h2 class="font-bold text-xl mb-4 md:block hidden">Benefit Kolaborasi 2</h2>
+              <p class="font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aut asperiores odit quidem veritatis eligendi earum maxime qui unde cumque quae, quibusdam modi neque nemo autem blanditiis, mollitia dolorem sequi ipsum fuga velit. Cupiditate temporibus sint esse aliquid molestias
+                enim sed. Voluptate omnis alias consectetur deleniti eligendi? Repellat, ab non?
+              </p>
+            </div>
+          </div>
+
+          <!-- benefit kolaborasi 2 -->
+          <div class="flex flex-col md:flex-row gap-x-3 md:gap-x-6">
+            <!-- circle img -->
+            <div class="md:w-100px md:min-w-100px md:max-w-100px flex items-center md:items-start">
+              <img class="w-14 md:w-auto" src="assets/img/collaboration/hantari-kolaborasi/icon3_kolaborasi.png" alt="tea-time" />
+              <h2 class="font-bold text-xl ml-3 md:hidden block">Benefit Kolaborasi 3</h2>
+            </div>
+
+            <!-- texts -->
+            <div class="mt-3 md:mt-0">
+              <h2 class="font-bold text-xl mb-4 md:block hidden">Benefit Kolaborasi 3</h2>
+              <p class="font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aut asperiores odit quidem veritatis eligendi earum maxime qui unde cumque quae, quibusdam modi neque nemo autem blanditiis, mollitia dolorem sequi ipsum fuga velit. Cupiditate temporibus sint esse aliquid molestias
+                enim sed. Voluptate omnis alias consectetur deleniti eligendi? Repellat, ab non?
+              </p>
+            </div>
+          </div>
+
+          <!-- benefit kolaborasi 4 -->
+          <div class="flex flex-col md:flex-row gap-x-3 md:gap-x-6">
+            <!-- circle img -->
+            <div class="md:w-100px md:min-w-100px md:max-w-100px flex items-center md:items-start">
+              <img class="w-14 md:w-auto" src="assets/img/collaboration/hantari-kolaborasi/icon4_kolaborasi.png" alt="calendar-time" />
+              <h2 class="font-bold text-xl ml-3 md:hidden block">Benefit Kolaborasi 4</h2>
+            </div>
+
+            <!-- texts -->
+            <div class="mt-3 md:mt-0">
+              <h2 class="font-bold text-xl mb-4 md:block hidden">Benefit Kolaborasi 4</h2>
+              <p class="font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aut asperiores odit quidem veritatis eligendi earum maxime qui unde cumque quae, quibusdam modi neque nemo autem blanditiis, mollitia dolorem sequi ipsum fuga velit. Cupiditate temporibus sint esse aliquid molestias
+                enim sed. Voluptate omnis alias consectetur deleniti eligendi? Repellat, ab non?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- hantari program kolaborasi -->
+      <section class="py-20 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <!-- img -->
+        <div class="box-center relative">
+          <img src="https://picsum.photos/450/550" alt="doctor-and-smartphone" class="z-10" />
+
+          <div class="w-64 lg:w-44 h-96 bg-blue-brand absolute left-0 -bottom-12"></div>
+        </div>
+
+        <!-- texts / list -->
+        <div class="p-6 md:p-20 mt-4 md:mt-0">
+          <h1 class="text-2xl text-purple-500 font-bold">Hantari Program Kolaborasi</h1>
+
+          <p class="text-sm font-light mt-4 mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugiat alias pariatur repellat aut! Possimus, atque modi? Beatae, quam sit?</p>
+
+          <div class="mt-4 flex flex-col gap-y-6 px-4">
+            <div class="flex gap-x-4">
+              <div class="rounded-full w-10 h-10 bg-blue-100 text-blue-brand font-bold box-center">1</div>
+
+              <p class="flex-1 text-sm font-light">
+                <b class="font-bold">Program 1,</b>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat repudiandae ipsum, asperiores quam maiores possimus!
+              </p>
+            </div>
+
+            <div class="flex gap-x-4">
+              <div class="rounded-full w-10 h-10 bg-blue-100 text-blue-brand font-bold box-center">2</div>
+
+              <p class="flex-1 text-sm font-light">
+                <b class="font-bold">Program 2,</b>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat repudiandae ipsum, asperiores quam maiores possimus!
+              </p>
+            </div>
+
+            <div class="flex gap-x-4">
+              <div class="rounded-full w-10 h-10 bg-blue-100 text-blue-brand font-bold box-center">3</div>
+
+              <p class="flex-1 text-sm font-light">
+                <b class="font-bold">Program 3,</b>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat repudiandae ipsum, asperiores quam maiores possimus!
+              </p>
+            </div>
+
+            <div class="flex gap-x-4">
+              <div class="rounded-full w-10 h-10 bg-blue-100 text-blue-brand font-bold box-center">4</div>
+
+              <p class="flex-1 text-sm font-light">
+                <b class="font-bold">Program 4,</b>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat repudiandae ipsum, asperiores quam maiores possimus!
+              </p>
+            </div>
+          </div>
+
+          <!-- how it works btn -->
+          <button class="flex items-center gap-x-2 mt-8 md:mt-4">
+            <span class="transform -rotate-90 text-white rounded-full w-8 h-8 bg-yellow-400 box-center"> &#9660; </span>
+
+            <span class="font-light text-yellow-400">HOW IT WORKS</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="p-6 md:p-20 bg-blue-100 text-center">
+        <h1 class="font-bold text-2xl text-blue-brand">HANTARI KOLABORASI</h1>
+        <p class="mt-4 mb-10 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda magnam dicta voluptate officia esse odio!</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4 mb-10">
+          <div>
+            <img src="https://picsum.photos/500/300" alt="meeting-1" class="mx-auto mb-10" />
+            <p class="font-bold text-purple-500">Lorem ipsum dolor sit amet.</p>
+            <p class="font-light mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quis perspiciatis doloribus autem dolore suscipit.</p>
+          </div>
+
+          <div>
+            <img src="https://picsum.photos/500/300" alt="meeting-2" class="mx-auto mb-10" />
+            <p class="font-bold text-purple-500">Lorem ipsum dolor sit amet.</p>
+            <p class="font-light mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quis perspiciatis doloribus autem dolore suscipit.</p>
+          </div>
+        </div>
+
+        <!-- blue box -->
+        <div class="bg-blue-200 border-blue-400 p-10 italic text-left" style="border-left-width: 20px">
+          <p class="text-5xl text-blue-300">"</p>
+          <p class="-mt-8 text-xl text-blue-500 pl-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique iusto possimus soluta ullam explicabo delectus eos totam culpa libero iste!</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="grid grid-cols-1 md:grid-cols-5 gap-8 p-6 md:p-20 bg-purple-900 text-white">
+      <div class="col-span-1 md:col-span-2 flex flex-col gap-y-3 md:gap-y-4">
+        <p class="font-bold">About Hantari</p>
+
+        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem explicabo nesciunt consequuntur, at molestiae voluptatem similique dolore provident doloremque ad.</p>
+      </div>
+
+      <nav class="flex flex-col gap-y-3 md:gap-y-4">
+        <p class="font-bold">Info</p>
+
+        <a href="#" class="text-sm">Support</a>
+        <a href="#" class="text-sm">Developer</a>
+        <a href="#" class="text-sm">Services</a>
+        <a href="#" class="text-sm">Get Started</a>
+      </nav>
+
+      <nav class="flex flex-col gap-y-3 md:gap-y-4">
+        <p class="font-bold">Company</p>
+
+        <a href="#" class="text-sm">Press Release</a>
+        <a href="#" class="text-sm">Mission</a>
+        <a href="#" class="text-sm">Strategy</a>
+        <a href="#" class="text-sm">How it works</a>
+      </nav>
+
+      <div class="flex flex-col gap-y-3 md:gap-y-4">
+        <p class="font-bold">Contact</p>
+
+        <p class="text-sm">
+          Ruko Jatibening Baru Lt. 2
+          <br />
+          Jl. Jati Utama Raya Blok N
+          <br />
+          No. 16
+          <br />
+          Komplek Jatibening Dua Bekasi 17412
+          <br />
+          Indonesia
+        </p>
+      </div>
+
+      <div class="col-span-1 md:col-span-5 text-center mt-20 font-light">
+        <p>&copy; Copyright Hantari 2021. All Right Reserved</p>
+      </div>
+    </footer>
+    <script>
+      // menu toggle
+      var menuToggle = document.querySelector('.menu-toggle')
+      var navMenu = document.querySelector('.mobile-navbar')
+      menuToggle.addEventListener('click', function() {
+        navMenu.classList.toggle('-top-96')
+        navMenu.classList.toggle('top-0')
+      })
+    </script>
+  </body>
+</html>

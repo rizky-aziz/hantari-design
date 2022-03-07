@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <!-- tailwindcss cdn -->
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" /> -->
+
+    <!-- video js -->
+    <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- tailwind css -->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header class="px-6 md:px-16 h-20 fixed inset-x-0 top-0 bg-white box-between z-40">
+      <a href="#">
+        <img src="./assets/img/logo.png" alt="hantari-header-logo" />
+      </a>
+      
+      <!-- hidden on mobile -->
+      <nav class="xl:flex hidden gap-x-8 font-light header-links">
+        <a href="index.html" class="font-bold text-blue-brand">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="#">Our Services <span class="ml-2 text-blue-brand">&#9660;</span></a>
+        <a href="hantari-academy.html">Hantari Academy <span class="ml-2 text-blue-brand">&#9660;</span></a>
+        <a href="collaboration.html">Collaboration</a>
+        <a href="media.html">Media <span class="ml-2 text-blue-brand">&#9660;</span></a>
+      </nav>
+
+      <div class="flex items-center gap-x-5">
+        <a href="#" class="text-sm bg-purple-500 text-white px-8 py-2 rounded-full font-bold whitespace-nowrap ml-2 sm:block hidden"> Hantari Store </a>
+        <svg class="menu-toggle block xl:hidden cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1)">
+          <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+        </svg>
+      </div>
+      
+    </header>
+    <!-- hidden on desktop -->
+    <header class="mobile-navbar xl:hidden mt-20 px-6 md:px-16 fixed inset-x-0 bg-white  border-t border-slate-500 -top-96 z-30 shadow-md transition-all duration-300">
+      <nav class="bg-white flex flex-col">
+        <a href="index.html" class="py-3 font-bold text-blue-brand">Home</a>
+        <a href="about.html" class="py-3">About Us</a>
+        <a href="#" class="py-3">Our Services <span class="ml-2 text-blue-brand">&#9660;</span></a>
+        <a href="hantari-academy.html" class="py-3">Hantari Academy <span class="ml-2 text-blue-brand">&#9660;</span></a>
+        <a href="collaboration.html" class="py-3">Collaboration</a>
+        <a href="media.html" class="py-3">Media <span class="ml-2 text-blue-brand">&#9660;</span></a>
+        <a href="#" class="text-sm text-white mb-4 font-bold sm:hidden block"> 
+          <button class="bg-purple-500 px-8 py-2 rounded-full">
+            Hantari Store 
+          </button>
+        </a>
+      </nav>
+    </header>
+
+    <main class="mt-20 min-h-screen">
+      <!-- 2 big boxes -->
+      <section class="relative grid grid-cols-1 md:grid-cols-2" style="height: 500px">
+        <!-- blue-brand & purple box -->
+        <div class="h-full bg-blue-brand lg:relative md:block">
+          <div class="absolute top-20 -bottom-8 inset-x-0 px-6 md:px-16">
+            <div class="bg-purple-500 h-full flex items-center justify-center flex-col text-white text-3xl md:text-4xl">
+              <p class="text-[24px] sm:text-normal text-center">
+                Mendampingi saat <br />
+                Anda membutuhkan
+                <br />
+
+                <b>
+                  pendekatan yang <br />
+                  lebih personal
+                </b>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- big img -->
+        <div class="h-full bg-center bg-cover hidden md:block" style="background-image: url(https://picsum.photos/1080/1080)"></div>
+      </section>
+
+      <!-- our mission -->
+      <section class="px-6 md:px-14 my-32 text-center">
+        <img src="assets/img/logo_title.png" alt="hantari-only-logo" class="mx-auto" />
+
+        <h1 class="text-3xl text-blue-brand font-bold my-8 tracking-wider">OUR MISSION</h1>
+        <h2 class="text-xl md:text-2xl text-purple-500 font-bold">Lembaga Konsultan Berbasis Psikologi dengan Fokus pada Well-Being</h2>
+        <h3 class="text-sm md:text-xl font-light mt-4">
+          Hantari Konsulting adalah lembaga konsultan berbasis psikologi dengan fokus pada well-being <br />
+          dan pengembangan potensi manusia, baik dalam dunia pendidikan, profesional, organisasi, <br />
+          maupun perusahaan
+        </h3>
+      </section>
+
+      <!-- hantari nara luhur -->
+      <section class="grid md:grid-cols-2">
+        <!-- text, desc, btn -->
+        <div class="p-6 md:p-14">
+          <h1 class="text-2xl text-purple-500 font-bold">Hantari Nara Luhur</h1>
+          <p class="font-light my-4">
+            Menyatakan misi kami untuk mengantarkan manusia ke tempat yang lebih tinggi, membantu dan menjadi mitra bagi anda baik individu, tim, organisasi atau komunitas yang ingin menjadi lebih baik dan mengembangkan potensi yang dimiliki.
+            <br /><br />
+            Dalam lingkup masyarakat, kami juga ingin berkontribusi untuk mewujudkan masyarakat dengan kualitas manusia yang terus meningkat.
+          </p>
+
+          <!-- how it works btn -->
+          <button class="flex items-center gap-x-2 mt-4">
+            <span class="transform -rotate-90 text-white rounded-full w-8 h-8 bg-yellow-400 box-center"> &#9660; </span>
+
+            <span class="font-light text-yellow-400">HOW IT WORKS</span>
+          </button>
+        </div>
+
+        <!-- vid, bg -->
+        <div class="grid grid-cols-3 relative">
+          <div class="absolute inset-0 p-6 md:p-10 lg:p-20 z-20">
+            <div class="bg-white w-full h-full shadow-2xl">
+              <!-- video library -->
+              <video id="my-video" class="video-js w-full h-full" controls preload="auto" data-setup="{}">
+                <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4" />
+                <!-- <source src="MY_VIDEO.webm" type="video/webm" /> -->
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider upgrading to a web browser that
+                  <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                </p>
+              </video>
+            </div>
+          </div>
+
+          <!-- bg -->
+          <div class="col-span-2">
+            <!-- empty div for spacing -->
+          </div>
+
+          <div class="col-span-1 h-96 md:h-full relative">
+            <div class="absolute inset-0 z-10 opacity-50" style="background-image: url(https://picsum.photos/1080/1080)"></div>
+            <div class="absolute inset-0 bg-purple-500"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- tentang hantari -->
+      <section class="p-6 md:p-14 mt-5 grid grid-cols-1 md:grid-cols-2 gap-x-10 items-center">
+        <div class="p-20">
+          <img src="assets/img/home/segitiga_image.png" alt="hantari-framework-triangle" />
+        </div>
+
+        <div>
+          <h1 class="text-2xl text-purple-500 font-bold">Tentang Hantari</h1>
+
+          <p class="text-sm md:text-xl font-light mt-4 mb-8">Kerangka Kerja Hantari memastikan layanan yang <i>integrated</i> dan disesuaikan dengan kebutuhan anda, meliputi</p>
+
+          <!-- item 1 (hantari assess) -->
+          <div class="flex gap-x-4 text-sm mb-4">
+            <!-- icon -->
+            <div class="w-40px min-w-40px max-w-40px">
+              <img src="assets/img/home/icon2_home.png" alt="hantari-assess-ico" />
+            </div>
+
+            <!-- text -->
+            <div>
+              <b class="text-blue-brand">Hantari Assess</b>
+              <p class="font-light">Assessment psikologis yang akurat merupakan dasar krusial bagi langkah pengembangan yang efektif untuk tujuan pengembangan personal, pendidikan maupun <i>Human Asset</i> di organisasi.</p>
+            </div>
+          </div>
+
+          <!-- item 2 (hantari academy) -->
+          <div class="flex gap-x-4 text-sm mb-4">
+            <!-- icon -->
+            <div class="w-40px min-w-40px max-w-40px">
+              <img src="assets/img/home/icon3_home.png" alt="hantari-academy-ico" />
+            </div>
+
+            <!-- text -->
+            <div>
+              <b class="text-purple-400">Hantari Academy</b>
+              <p class="font-light">Berfokus untuk memberikan pengalaman pembelajaran yang berdampak, dengan menggunakan prinsip-prinsip psikologi positif dan pembelajaran <i>experiential</i>.</p>
+            </div>
+          </div>
+
+          <!-- item 3 (hantari coaching-counseling) -->
+          <div class="flex gap-x-4 text-sm mb-4">
+            <!-- icon -->
+            <div class="w-40px min-w-40px max-w-40px">
+              <img src="assets/img/home/icon4_home.png" alt="hantari-coaching-counseling-ico" />
+            </div>
+
+            <!-- text -->
+            <div>
+              <b class="text-pink-400">Hantari Coaching-Counseling</b>
+              <p class="font-light">Psikolog dan <i>professional coach</i> siap mendampingi saat anda membutuhkan pendekatan yang lebih personal.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- kolaborasi -->
+      <section class="grid grid-cols-1 md:grid-cols-2 text-white">
+        <!-- texts -->
+        <div class="bg-blue-brand py-20 md:py-32 px-6 md:px-14">
+          <h1 class="text-2xl font-bold">Kolaborasi</h1>
+
+          <p class="font-light my-4 text-sm md:text-normal">
+            Kami percaya pada kolaborasi dan sinergi bahwa bersama-sama kita bisa berkontribusi lebih banyak dan lebih baik. Untuk itu kami terbuka untuk berkolaborasi dengan institusi, organisasi, perusahaan ataupun komunitas anda, untuk mengembangkan dan melaksanakan program atau kegiatan inovatif
+            yang berdampak baik yang bersifat <i>for profit</i> maupun <i>non profit</i>.
+          </p>
+
+          <a href="#" class="flex items-center gap-x-2 font-light">
+            <span class="transform -rotate-90 text-white rounded-full w-8 h-8 bg-yellow-400 box-center"> &#9660; </span>
+            SELENGKAPNYA
+          </a>
+        </div>
+
+        <!-- big img -->
+        <div class="h-full bg-center bg-cover" style="background-image: url(https://picsum.photos/1080/1080)"></div>
+      </section>
+
+      <!-- hantari values -->
+      <section class="py-20 px-10 md:px-14 lg:px-32">
+        <img src="assets/img/logo_title.png" alt="hantari-only-logo" class="mx-auto" />
+
+        <h1 class="text-3xl text-center text-blue-brand font-bold mt-8">HANTARI VALUES</h1>
+        <p class="mt-4 font-light text-sm md:text-xl text-center">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br />
+          Quo, autem nisi. Architecto totam nemo corporis.
+        </p>
+
+        <!-- 4 circles -->
+        <div class="mt-20 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+          <!-- customer focus -->
+          <div class="flex flex-col md:flex-row gap-x-3 md:gap-x-6">
+            <!-- circle img -->
+            <!-- <div class="rounded-full bg-yellow-400 flex items-center justify-center" style="width: 100px; min-width: 100px; max-width: 100px; height: 100px">icon</div> -->
+            <div class="md:w-100px md:min-w-100px md:max-w-100px flex items-center md:items-start">
+              <img class="w-14 md:w-auto" src="assets/img/home/hantari-values/icon5_home.png" alt="research-glass" />
+              <h2 class="font-bold text-xl ml-3 md:hidden block">Costumer Focus</h2>
+            </div>
+
+            <!-- texts -->
+            <div class="mt-3 md:mt-0">
+              <h2 class="font-bold text-xl mb-4 md:block hidden">Costumer Focus</h2>
+              <p class="font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aut asperiores odit quidem veritatis eligendi earum maxime qui unde cumque quae, quibusdam modi neque nemo autem blanditiis, mollitia dolorem sequi ipsum fuga velit. Cupiditate temporibus sint esse aliquid molestias
+                enim sed. Voluptate omnis alias consectetur deleniti eligendi? Repellat, ab non?
+              </p>
+            </div>
+          </div>
+
+          <!-- faith -->
+          <div class="flex flex-col md:flex-row gap-x-3 md:gap-x-6">
+            <!-- circle img -->
+            <!-- <div class="rounded-full bg-blue-brand flex items-center justify-center" style="width: 100px; min-width: 100px; max-width: 100px; height: 100px">icon</div> -->
+            <div class="md:w-100px md:min-w-100px md:max-w-100px flex items-center md:items-start">
+              <img class="w-14 md:w-auto" src="assets/img/home/hantari-values/icon7_home.png" alt="mind-progress" />
+              <h2 class="font-bold text-xl ml-3 mb-4 md:hidden block">Faith</h2>
+            </div>
+
+            <!-- texts -->
+            <div class="mt-3 md:mt-0">
+              <h2 class="font-bold text-xl mb-4 md:block hidden">Faith</h2>
+              <p class="font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aut asperiores odit quidem veritatis eligendi earum maxime qui unde cumque quae, quibusdam modi neque nemo autem blanditiis, mollitia dolorem sequi ipsum fuga velit. Cupiditate temporibus sint esse aliquid molestias
+                enim sed. Voluptate omnis alias consectetur deleniti eligendi? Repellat, ab non?
+              </p>
+            </div>
+          </div>
+
+          <!-- synergy -->
+          <div class="flex flex-col md:flex-row gap-x-3 md:gap-x-6">
+            <!-- circle img -->
+            <!-- <div class="rounded-full bg-pink-400 flex items-center justify-center" style="width: 100px; min-width: 100px; max-width: 100px; height: 100px">icon</div> -->
+            <div class="md:w-100px md:min-w-100px md:max-w-100px flex items-center md:items-start">
+              <img class="w-14 md:w-auto" src="assets/img/home/hantari-values/icon6_home.png" alt="synergy-body" />
+              <h2 class="font-bold text-xl ml-3 mb-4 md:hidden block">Synergy</h2>
+            </div>
+
+            <!-- texts -->
+            <div class="mt-3 md:mt-0">
+              <h2 class="font-bold text-xl mb-4 md:block hidden">Synergy</h2>
+              <p class="font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aut asperiores odit quidem veritatis eligendi earum maxime qui unde cumque quae, quibusdam modi neque nemo autem blanditiis, mollitia dolorem sequi ipsum fuga velit. Cupiditate temporibus sint esse aliquid molestias
+                enim sed. Voluptate omnis alias consectetur deleniti eligendi? Repellat, ab non?
+              </p>
+            </div>
+          </div>
+
+          <!-- learning and growing -->
+          <div class="flex flex-col md:flex-row gap-x-3 md:gap-x-6">
+            <!-- circle img -->
+            <!-- <div class="rounded-full bg-purple-500 flex items-center justify-center" style="width: 100px; min-width: 100px; max-width: 100px; height: 100px">icon</div> -->
+            <div class="md:w-100px md:min-w-100px md:max-w-100px flex items-center md:items-start">
+              <img class="w-14 md:w-auto" src="assets/img/home/hantari-values/icon8_home.png" alt="grow-mindset" />
+              <h2 class="font-bold text-xl ml-3 mb-4 md:hidden block">Learning and Growing</h2>
+            </div>
+
+            <!-- texts -->
+            <div class="mt-3 md:mt-0">
+              <h2 class="font-bold text-xl mb-4 md:block hidden">Learning and Growing</h2>
+              <p class="font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aut asperiores odit quidem veritatis eligendi earum maxime qui unde cumque quae, quibusdam modi neque nemo autem blanditiis, mollitia dolorem sequi ipsum fuga velit. Cupiditate temporibus sint esse aliquid molestias
+                enim sed. Voluptate omnis alias consectetur deleniti eligendi? Repellat, ab non?
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- our corporate clients -->
+        <h2 class="font-bold text-xl text-center mt-20 mb-10">Our Corporate Clients</h2>
+
+        <!-- corporate logos -->
+        <div class="flex items-center justify-center gap-x-10">
+          <div>
+            <img src="assets/img/home/hantari-values/logo6_mitra.png" alt="corporate-client-1" />
+          </div>
+
+          <div>
+            <img src="assets/img/home/hantari-values/logo6_mitra.png" alt="corporate-client-2" />
+          </div>
+
+          <div>
+            <img src="assets/img/home/hantari-values/logo6_mitra.png" alt="corporate-client-3" />
+          </div>
+        </div>
+      </section>
+
+      <!-- articles -->
+      <section class="bg-gray-200 py-8 lg:py-40 grid grid-cols-1 md:grid-cols-2 gap-x-6 md:gap-x-10 items-center">
+        <!-- view more -->
+        <div class="p-6 md:p-14">
+          <h1 class="font-bold text-2xl">ARTICLES</h1>
+          <p class="text-sm font-light mt-4 mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis totam iusto ratione architecto nobis fuga enim libero inventore quaerat eius.</p>
+          <a href="#" class="bg-purple-500 text-white px-8 py-2 rounded-full font-bold"> View More </a>
+        </div>
+
+        <!-- 2 articles -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-8 md:pr-4 px-6">
+          <a href="#" class="bg-white shadow-lg rounded-md text-center">
+            <div class="w-full h-52 bg-center bg-cover rounded-t-md" style="background-image: url(https://picsum.photos/1080/1080)"></div>
+            <div class="p-4">
+              <p class="font-bold mb-1">Latest Articles 1</p>
+              <p class="text-sm font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, porro.</p>
+            </div>
+          </a>
+
+          <a href="#" class="bg-white shadow-lg rounded-md text-center block md:hidden lg:block">
+            <div class="w-full h-52 bg-center bg-cover rounded-t-md" style="background-image: url(https://picsum.photos/1080/1080)"></div>
+            <div class="p-4">
+              <p class="font-bold mb-1">Latest Articles 2</p>
+              <p class="text-sm font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, porro.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- hantari team -->
+      <section class="p-6 md:p-28 bg-gradient-to-r from-purple-600 to-purple-400 text-center text-white">
+        <img src="assets/img/home/hantari-team/logo_title2.png" alt="purple-hantari-logo" class="mx-auto" />
+
+        <h1 class="font-bold text-3xl my-8">HANTARI TEAM</h1>
+        <p class="text-sm md:text-xl font-light mb-10">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <br />
+          Assumenda sit odit vel nisi fuga dolores. Animi cumque ea ipsa expedita?
+        </p>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- person 1 -->
+            <div class="swiper-slide text-center">
+              <div class="mx-auto w-44 h-44 rounded-full bg-cover bg-center" style="background-image: url(https://picsum.photos/300/300)"></div>
+
+              <p class="font-bold mt-4">Hesti Nur Lestari, MBA., Psikolog.</p>
+              <p class="font-light text-sm mb-16">Director & Lead Consultant</p>
+            </div>
+
+            <!-- person 2 -->
+            <div class="swiper-slide text-center">
+              <div class="mx-auto w-44 h-44 rounded-full bg-cover bg-center" style="background-image: url(https://picsum.photos/300/300)"></div>
+
+              <p class="font-bold mt-4">Sitti Fatimah Oemar Mattalitti, M. Psi</p>
+              <p class="font-light text-sm mb-16">Senior Consultant; Assessor</p>
+            </div>
+
+            <!-- person 3 -->
+            <div class="swiper-slide text-center">
+              <div class="mx-auto w-44 h-44 rounded-full bg-cover bg-center" style="background-image: url(https://picsum.photos/300/300)"></div>
+
+              <p class="font-bold mt-4">Hesti Nur Lestari, MBA., Psikolog.</p>
+              <p class="font-light text-sm mb-16">Senior Consultant; Trainer & Counselor</p>
+            </div>
+
+            <!-- person 4 -->
+            <div class="swiper-slide text-center">
+              <div class="mx-auto w-44 h-44 rounded-full bg-cover bg-center" style="background-image: url(https://picsum.photos/300/300)"></div>
+
+              <p class="font-bold mt-4">Hesti Nur Lestari, MBA., Psikolog.</p>
+              <p class="font-light text-sm mb-16">Director & Lead Consultant</p>
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- <div class="box-between">
+          <button>kiri</button>
+          <div class="w-3/5 box-between">
+            <div>asd</div>
+            <div>asd</div>
+            <div>asd</div>
+          </div>
+          <button>kanan</button>
+        </div> -->
+      </section>
+    </main>
+
+    <footer class="grid grid-cols-1 md:grid-cols-5 gap-8 p-6 md:p-14 bg-purple-900 text-white">
+      <div class="col-span-1 md:col-span-2 flex flex-col gap-y-3 md:gap-y-4">
+        <p class="font-bold">About Hantari</p>
+
+        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem explicabo nesciunt consequuntur, at molestiae voluptatem similique dolore provident doloremque ad.</p>
+      </div>
+
+      <nav class="flex flex-col gap-y-3 md:gap-y-4">
+        <p class="font-bold">Info</p>
+
+        <a href="#" class="text-sm">Support</a>
+        <a href="#" class="text-sm">Developer</a>
+        <a href="#" class="text-sm">Services</a>
+        <a href="#" class="text-sm">Get Started</a>
+      </nav>
+
+      <nav class="flex flex-col gap-y-3 md:gap-y-4">
+        <p class="font-bold">Company</p>
+
+        <a href="#" class="text-sm">Press Release</a>
+        <a href="#" class="text-sm">Mission</a>
+        <a href="#" class="text-sm">Strategy</a>
+        <a href="#" class="text-sm">How it works</a>
+      </nav>
+
+      <div class="flex flex-col gap-y-3 md:gap-y-4">
+        <p class="font-bold">Contact</p>
+
+        <p class="text-sm">
+          Ruko Jatibening Baru Lt. 2
+          <br />
+          Jl. Jati Utama Raya Blok N
+          <br />
+          No. 16
+          <br />
+          Komplek Jatibening Dua Bekasi 17412
+          <br />
+          Indonesia
+        </p>
+      </div>
+
+      <div class="col-span-1 md:col-span-5 text-center mt-20 font-light">
+        <p>&copy; Copyright Hantari 2021. All Right Reserved</p>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          200: {
+            slidesPerView: 1
+          },
+          700: {
+            slidesPerView: 2
+          },
+          1000: {
+            slidesPerView: 3
+          }
+        }
+      });
+      
+      // menu toggle
+      var menuToggle = document.querySelector('.menu-toggle')
+      var navMenu = document.querySelector('.mobile-navbar')
+      menuToggle.addEventListener('click', function() {
+        navMenu.classList.toggle('-top-96')
+        navMenu.classList.toggle('top-0')
+      })
+    </script>
+
+    <!-- video js -->
+    <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+  </body>
+</html>
